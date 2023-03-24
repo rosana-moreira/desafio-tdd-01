@@ -2,6 +2,7 @@ package com.devsuperior.bds01.dto;
 
 import java.io.Serializable;
 
+import com.devsuperior.bds01.entities.Department;
 import com.devsuperior.bds01.entities.Employee;
 
 public class EmployeeDTO implements Serializable {
@@ -53,11 +54,11 @@ public class EmployeeDTO implements Serializable {
 		this.email = email;
 	}
 
-	public Long getDepartmentId() {
-		return departmentId;
-	}
-
 	public void setDepartmentId(Long departmentId) {
 		this.departmentId = departmentId;
+	}
+
+	public Long getDepartmentId() {
+		return departmentId;
 	}
 }
